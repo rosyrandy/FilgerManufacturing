@@ -1,0 +1,354 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Welcome to DEMA</title>
+		<csactions>
+			<csaction name="BF3A390" class="Goto Link" type="ONEVENT" val0="research.html" val1>
+			<csaction name="39BE110" class="Goto Link" type="ONEVENT" val0="research.html" val1>
+			<csaction name="8797F88" class="Goto Link" type="ONEVENT" val0="laundry.html" val1>
+		</csactions>
+		<csscriptdict>
+			<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+function CSGotoLink(action) {
+	if (action[2].length) {
+		var hasFrame=false;
+		for(i=0;i<parent.frames.length;i++) { if (parent.frames[i].name==action[2]) { hasFrame=true; break;}}
+		if (hasFrame==true)
+			parent.frames[action[2]].location = action[1];
+		else
+			window.open (action[1],action[2],"");
+	}
+	else location = action[1];
+}
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button7',/*URL*/'images/laundy1.gif',/*URL*/'images/laundy2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button8',/*URL*/'images/nproject.gif',/*URL*/'images/nproject.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button9',/*URL*/'images/nproject.gif',/*URL*/'images/nproject.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button10',/*URL*/'images/nproject.gif',/*URL*/'images/nproject.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button11',/*URL*/'images/homeblu1.gif',/*URL*/'images/homeblu2.gif',/*URL*/'','');
+CSAct[/*CMP*/ 'BF3A390'] = new Array(CSGotoLink,/*URL*/ 'research.html','');
+CSAct[/*CMP*/ '39BE110'] = new Array(CSGotoLink,/*URL*/ 'research.html','');
+CSAct[/*CMP*/ '8797F88'] = new Array(CSGotoLink,/*URL*/ 'laundry.html','');
+
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body background="images/dust.gif" onload="CSScriptInit();">
+		<div align="left">
+			<table cool width="720" height="163" border="0" cellpadding="0" cellspacing="0" gridx="16" showgridx usegridx gridy="16" showgridy usegridy>
+				<tr height="1" cntrlrow>
+					<td width="1" height="1"></td>
+					<td width="32" height="1"><spacer type="block" width="32" height="1"></td>
+					<td width="352" height="1"><spacer type="block" width="352" height="1"></td>
+					<td width="160" height="1"><spacer type="block" width="160" height="1"></td>
+					<td width="175" height="1"><spacer type="block" width="175" height="1"></td>
+				</tr>
+				<tr height="16">
+					<td width="1" height="16"><spacer type="block" width="1" height="16"></td>
+					<td width="32" height="16"></td>
+					<td width="352" height="16"></td>
+					<td width="160" height="16"></td>
+					<td width="175" height="16"></td>
+				</tr>
+				<tr height="64">
+					<td width="1" height="64"><spacer type="block" width="1" height="64"></td>
+					<td width="32" height="64"></td>
+					<td width="352" height="146" colspan="1" rowspan="2" valign="top" align="left" xpos="32"><img src="images/demalogo.gif"></td>
+					<td width="335" height="64" colspan="2" rowspan="1" valign="top" align="left" xpos="384"><img src="images/projectban.gif"></td>
+				</tr>
+				<tr height="82">
+					<td width="1" height="82"><spacer type="block" width="1" height="82"></td>
+					<td width="32" height="82"></td>
+					<td width="160" height="82"></td>
+					<td width="175" height="82" colspan="1" rowspan="1" valign="top" align="left" xpos="544"><img height="78" width="128" src="images/drillprs_lg_clr.gif"></td>
+				</tr>
+			</table>
+		</div>
+		<center>
+			<p>
+			<table cool width="734" height="60" border="0" cellpadding="0" cellspacing="0" gridx="8" showgridx usegridx gridy="8" showgridy usegridy bgcolor="silver">
+				<tr height="1" cntrlrow>
+					<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+					<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+					<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+					<td width="152" height="1"><spacer type="block" width="152" height="1"></td>
+					<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+					<td width="152" height="1"><spacer type="block" width="152" height="1"></td>
+					<td width="133" height="1"><spacer type="block" width="133" height="1"></td>
+				</tr>
+				<tr height="8">
+					<td width="1" height="8"><spacer type="block" width="1" height="8"></td>
+					<td width="8" height="8"><spacer type="block" width="8" height="8"></td>
+					<td width="144" height="8"><spacer type="block" width="144" height="8"></td>
+					<td width="152" height="8"><spacer type="block" width="152" height="8"></td>
+					<td width="144" height="8"><spacer type="block" width="144" height="8"></td>
+					<td width="152" height="8"><spacer type="block" width="152" height="8"></td>
+					<td width="133" height="8"><spacer type="block" width="133" height="8"></td>
+				</tr>
+				<tr height="51">
+					<td width="1" height="51"><spacer type="block" width="1" height="51"></td>
+					<td width="8" height="51"><spacer type="block" width="8" height="51"></td>
+					<td width="144" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="8"><csobj w="136" h="40" t="Button" ht="images/laundy2.gif" csclick="8797F88"><a href="laundry.html" onmouseover="return CSIShow(/*CMP*/'Button7',1)" onmouseout="return CSIShow(/*CMP*/'Button7',0)" onclick="CSAction(new Array(/*CMP*/'8797F88'));return CSClickReturn()"><img src="images/laundy1.gif" width="136" height="40" name="Button7" border="0"></a></csobj></td>
+					<td width="152" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="152"><csobj w="144" h="40" t="Button" ht="images/nproject.gif"><a href="#" onmouseover="return CSIShow(/*CMP*/'Button8',1)" onmouseout="return CSIShow(/*CMP*/'Button8',0)" onclick="return CSButtonReturn()"><img src="images/nproject.gif" width="144" height="40" name="Button8" border="0"></a></csobj></td>
+					<td width="144" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="304"><csobj w="136" h="40" t="Button" ht="images/nproject.gif"><a href="#" onmouseover="return CSIShow(/*CMP*/'Button9',1)" onmouseout="return CSIShow(/*CMP*/'Button9',0)" onclick="return CSButtonReturn()"><img src="images/nproject.gif" width="136" height="40" name="Button9" border="0"></a></csobj></td>
+					<td width="152" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="448"><csobj w="144" h="40" t="Button" ht="images/nproject.gif"><a href="#" onmouseover="return CSIShow(/*CMP*/'Button10',1)" onmouseout="return CSIShow(/*CMP*/'Button10',0)" onclick="return CSButtonReturn()"><img src="images/nproject.gif" width="144" height="40" name="Button10" border="0"></a></csobj></td>
+					<td width="133" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="600"><csobj w="107" h="43" t="Button" ht="images/homeblu2.gif" csclick="39BE110" csdblcl="BF3A390"><a href="research.html" onmouseover="return CSIShow(/*CMP*/'Button11',1)" onmouseout="return CSIShow(/*CMP*/'Button11',0)" onclick="CSAction(new Array(/*CMP*/'39BE110'));return CSClickReturn()" ondblclick="CSAction(new Array(/*CMP*/'BF3A390'));"><img src="images/homeblu1.gif" width="107" height="43" name="Button11" border="0"></a></csobj></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<p><font size="1">
+		<hr size="5">
+		<table cool width="796" height="475" border="0" cellpadding="0" cellspacing="0" gridx="16" showgridx usegridx gridy="16" showgridy usegridy>
+			<tr height="1" cntrlrow>
+				<td width="1" height="1"></td>
+				<td width="795" height="1"><spacer type="block" width="795" height="1"></td>
+			</tr>
+			<tr height="474">
+				<td width="1" height="474"><spacer type="block" width="1" height="474"></td>
+				<td width="795" height="474" colspan="1" rowspan="1" valign="top" align="left" xpos="0">
+					<table border="2" cellpadding="0" cellspacing="1" width="741" bgcolor="silver">
+						<caption><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>PROJECT SCHEDULE</b></font></caption>
+						<tr>
+							<td align="center">Priority</td>
+							<td align="center">Project Name</td>
+							<td align="center" width="10%">Stage</td>
+							<td width="10%" align="center">Work</td>
+							<td width="35%" align="center">Description</td>
+							<td width="7%" align="center">Est. hrs</td>
+							<td width="10%" align="center">Comp Date</td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">Laundry 2000</td>
+							<td width="10%" align="center">Schematic</td>
+							<td width="10%">Sig PCB</td>
+							<td width="35%"></td>
+							<td width="7%" align="center">8</td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">2</td>
+							<td align="center">Laundry 2000</td>
+							<td width="10%"></td>
+							<td width="10%">Drv PCB</td>
+							<td width="35%"></td>
+							<td width="7%" align="center">8</td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">3</td>
+							<td align="center">Laundry 2000</td>
+							<td width="10%"></td>
+							<td width="10%">Main PCB</td>
+							<td width="35%"></td>
+							<td width="7%" align="center">16</td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">4</td>
+							<td align="center">Laundry 2000</td>
+							<td width="10%" align="center">Layout</td>
+							<td width="10%">Sig PCB</td>
+							<td width="35%"></td>
+							<td width="7%" align="center">8</td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">5</td>
+							<td align="center">Laundry 2000</td>
+							<td width="10%"></td>
+							<td width="10%">Drv PCB</td>
+							<td width="35%"></td>
+							<td width="7%" align="center">8</td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">6</td>
+							<td align="center">Laundry 2000</td>
+							<td width="10%"></td>
+							<td width="10%">Main PCB</td>
+							<td width="35%"></td>
+							<td width="7%" align="center">20</td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">7</td>
+							<td align="center">Laundry 2000</td>
+							<td width="10%" align="center">Firmware</td>
+							<td width="10%">Write</td>
+							<td width="35%"></td>
+							<td width="7%"></td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">8</td>
+							<td align="center">Laundry 2000</td>
+							<td width="10%"></td>
+							<td width="10%">Debug</td>
+							<td width="35%"></td>
+							<td width="7%"></td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">9</td>
+							<td></td>
+							<td width="10%"></td>
+							<td width="10%">Document</td>
+							<td width="35%"></td>
+							<td width="7%"></td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">10</td>
+							<td></td>
+							<td width="10%" align="center">Prototype</td>
+							<td width="10%"></td>
+							<td width="35%"></td>
+							<td width="7%"></td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">11</td>
+							<td></td>
+							<td width="10%"></td>
+							<td width="10%"></td>
+							<td width="35%"></td>
+							<td width="7%"></td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">12</td>
+							<td></td>
+							<td width="10%" align="center">Verify</td>
+							<td width="10%"></td>
+							<td width="35%"></td>
+							<td width="7%"></td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">13</td>
+							<td></td>
+							<td width="10%" align="center">Validate</td>
+							<td width="10%"></td>
+							<td width="35%"></td>
+							<td width="7%"></td>
+							<td width="10%"></td>
+						</tr>
+						<tr>
+							<td align="center">14</td>
+							<td></td>
+							<td width="10%"></td>
+							<td width="10%"></td>
+							<td width="35%"></td>
+							<td width="7%"></td>
+							<td width="10%"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		</font>
+	</body>
+
+</html>

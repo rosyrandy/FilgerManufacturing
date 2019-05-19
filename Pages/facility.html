@@ -1,0 +1,251 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Welcome to Filger Mfg.</title>
+		<csscriptdict>
+			<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button',/*URL*/'../images/servblu1.gif',/*URL*/'../images/servblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button2',/*URL*/'../images/qualblu1.gif',/*URL*/'../images/qualblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button3',/*URL*/'../images/aboutblu1.gif',/*URL*/'../images/aboutblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button4',/*URL*/'../images/contblu1.gif',/*URL*/'../images/contblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button5',/*URL*/'../images/homeblu1.gif',/*URL*/'../images/homeblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button7',/*URL*/'../images/home.gif',/*URL*/'../images/home2.gif',/*URL*/'','');
+
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body bgcolor="white" background="../images/dust.gif" onload="CSScriptInit();">
+		<font size="1">
+		<table cool width="778" height="179" border="0" cellpadding="0" cellspacing="0" gridx="16" showgridx usegridx gridy="16" showgridy usegridy>
+			<tr height="1" cntrlrow>
+				<td width="1" height="1"></td>
+				<td width="432" height="1"><spacer type="block" width="432" height="1"></td>
+				<td width="176" height="1"><spacer type="block" width="176" height="1"></td>
+				<td width="169" height="1"><spacer type="block" width="169" height="1"></td>
+			</tr>
+			<tr height="16">
+				<td width="1" height="16"><spacer type="block" width="1" height="16"></td>
+				<td width="432" height="178" colspan="1" rowspan="3" valign="top" align="left" xpos="0"><img height="160" width="432" src="../images/dust3.gif"></td>
+				<td width="176" height="16"></td>
+				<td width="169" height="16"></td>
+			</tr>
+			<tr height="64">
+				<td width="1" height="64"><spacer type="block" width="1" height="64"></td>
+				<td width="345" height="64" colspan="2" rowspan="1" valign="top" align="left" xpos="432"><img height="51" width="313" src="../images/facilityban.gif"></td>
+			</tr>
+			<tr height="98">
+				<td width="1" height="98"><spacer type="block" width="1" height="98"></td>
+				<td width="176" height="98"></td>
+				<td width="169" height="98" colspan="1" rowspan="1" valign="top" align="left" xpos="608"><img height="96" width="96" src="../images/drillprs_lg_clr.gif"></td>
+			</tr>
+		</table>
+		</font>
+		<center>
+			<p>
+			<table cool width="718" height="52" border="0" cellpadding="0" cellspacing="0" gridx="8" showgridx usegridx gridy="8" showgridy usegridy bgcolor="#c1c1c1">
+				<tr height="1" cntrlrow>
+					<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+					<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+					<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+					<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+					<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+					<td width="168" height="1"><spacer type="block" width="168" height="1"></td>
+					<td width="109" height="1"><spacer type="block" width="109" height="1"></td>
+				</tr>
+				<tr height="8">
+					<td width="1" height="8"><spacer type="block" width="1" height="8"></td>
+					<td width="8" height="8"><spacer type="block" width="8" height="8"></td>
+					<td width="144" height="8"><spacer type="block" width="144" height="8"></td>
+					<td width="144" height="8"><spacer type="block" width="144" height="8"></td>
+					<td width="144" height="8"><spacer type="block" width="144" height="8"></td>
+					<td width="168" height="8"><spacer type="block" width="168" height="8"></td>
+					<td width="109" height="8"><spacer type="block" width="109" height="8"></td>
+				</tr>
+				<tr height="43">
+					<td width="1" height="43"><spacer type="block" width="1" height="43"></td>
+					<td width="8" height="43"><spacer type="block" width="8" height="43"></td>
+					<td width="144" height="43" colspan="1" rowspan="1" valign="top" align="left" xpos="8"><csobj w="138" h="43" t="Button" ht="../images/servblu2.gif"><a href="products.html" onmouseover="return CSIShow(/*CMP*/'Button',1)" onmouseout="return CSIShow(/*CMP*/'Button',0)" onclick="return CSButtonReturn()"><img src="../images/servblu1.gif" width="138" height="43" name="Button" border="0"></a></csobj></td>
+					<td width="144" height="43" colspan="1" rowspan="1" valign="top" align="left" xpos="152"><csobj w="138" h="43" t="Button" ht="../images/qualblu2.gif"><a href="quality.html" onmouseover="return CSIShow(/*CMP*/'Button2',1)" onmouseout="return CSIShow(/*CMP*/'Button2',0)" onclick="return CSButtonReturn()"><img src="../images/qualblu1.gif" width="138" height="43" name="Button2" border="0"></a></csobj></td>
+					<td width="144" height="43" colspan="1" rowspan="1" valign="top" align="left" xpos="296"><csobj w="138" h="43" t="Button" ht="../images/aboutblu2.gif"><a href="staff.html" onmouseover="return CSIShow(/*CMP*/'Button3',1)" onmouseout="return CSIShow(/*CMP*/'Button3',0)" onclick="return CSButtonReturn()"><img src="../images/aboutblu1.gif" width="138" height="43" name="Button3" border="0"></a></csobj></td>
+					<td width="168" height="43" colspan="1" rowspan="1" valign="top" align="left" xpos="440"><csobj w="159" h="43" t="Button" ht="../images/contblu2.gif"><a href="contact.html" onmouseover="return CSIShow(/*CMP*/'Button4',1)" onmouseout="return CSIShow(/*CMP*/'Button4',0)" onclick="return CSButtonReturn()"><img src="../images/contblu1.gif" width="159" height="43" name="Button4" border="0"></a></csobj></td>
+					<td width="109" height="43" colspan="1" rowspan="1" valign="top" align="left" xpos="608"><csobj w="107" h="43" t="Button" ht="../images/homeblu2.gif"><a href="../index.html" onmouseover="return CSIShow(/*CMP*/'Button5',1)" onmouseout="return CSIShow(/*CMP*/'Button5',0)" onclick="return CSButtonReturn()"><img src="../images/homeblu1.gif" width="107" height="43" name="Button5" border="0"></a></csobj></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<p><font size="1">
+		<hr size="5">
+		</font></p>
+		<center>
+			<p><font size="4">17,000 SQUARE FOOT SHOP, INSPECTION ROOM AND OFFICES</font></p>
+		</center>
+		<div align="left">
+			<blockquote>
+				<p><font size="5"><b>MACHINERY<img height="32" width="32" src="../images/links.gif"></b></font></p>
+				<p><font size="4"><img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 4 - EMCO MAIER 320 CNC LATHES<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 2 - FEMCO DURGA 25L CNC LATHES<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 2 - HARDINGE GT 27 with bar feed<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 1 - OKUMA LC10 CNC LATHE<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 1 - OKUMA LC10 CNC 4-AXIS LATHE with bar feed<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 1 - UPGRADE FAGOR CNC LATHE<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 1 - YANG EAGLE 12 CNC LATHE<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 3 - FADAL VMC 15 MACHINING CENTERS<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 1 - FADAL VMC 4020 CNC MACHINING CENTER<br>
+				<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 5 - BRIDGEPORT MILLS<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 4 - HARDING CHUCKERS<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 1 - VOEST ENGINE LATHE<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 1 - JET BENCH LATHE<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 1 - ADCOCK SHIPLEY HORIZONAL MILL<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 4 - TWISTER SPEED LATHES<br>
+				<img height="14" width="14" src="../../../../../My%20Documents/Web/Images/circle-black.gif"> 5 - TOOL AND CUTTER GRINDERS, SURFACE GRINDERS<br>
+				LAPPING MACHINES AND HORIZONAL SAWS<br>
+				<br>
+				</font><br>
+				<font size="5"><b>CERTIFICATIONS</b><br>
+				</font><br>
+				<font size="4">CERTIFIED MIL-I45208A, MILITARY AND COMMERCIAL<br>
+				COMPLETE INSPECTION DEPARTMENT WITH HI-TECH CALIBRATED INSPECTION EQUIPMENT AND SPC CONTROL.<br>
+				CERTIFIED AND DOCUMENTED GAUGE BLOCK SETS FOR CALIBRATION PROCEDURES PER MIL-STD-45662A.<br>
+				WE UTILIZE IS0 9000 CERTIFIED COMPUTERIZED JOB CONTROL AND TRACKING SYSTEM.</font></p>
+				<p><font size="4"><br>
+				THIS COMBINED WITH CONTINUOUS MEASUREMENT SPC QUALITY ASSURANCE TECHNIQUES, PRODUCES HIGH QUALITY, COST EFFECTIVE PRECISION PARTS.<br>
+				</font></p>
+			</blockquote>
+		</div>
+		<div align="right">
+			<p>
+			<hr>
+			</p>
+		</div>
+		<center>
+			<p>
+			<table cool width="706" height="65" border="0" cellpadding="0" cellspacing="0" gridx="16" showgridx usegridx gridy="16" showgridy usegridy bgcolor="#cbcbcb">
+				<tr height="1" cntrlrow>
+					<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+					<td width="32" height="1"><spacer type="block" width="32" height="1"></td>
+					<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+					<td width="368" height="1"><spacer type="block" width="368" height="1"></td>
+					<td width="161" height="1"><spacer type="block" width="161" height="1"></td>
+				</tr>
+				<tr height="16">
+					<td width="1" height="16"><spacer type="block" width="1" height="16"></td>
+					<td width="32" height="16"><spacer type="block" width="32" height="16"></td>
+					<td width="144" height="16"><spacer type="block" width="144" height="16"></td>
+					<td width="368" height="16"><spacer type="block" width="368" height="16"></td>
+					<td width="161" height="16"><spacer type="block" width="161" height="16"></td>
+				</tr>
+				<tr height="48">
+					<td width="1" height="48"><spacer type="block" width="1" height="48"></td>
+					<td width="32" height="48"><spacer type="block" width="32" height="48"></td>
+					<td width="144" height="48" colspan="1" rowspan="1" valign="top" align="left" xpos="32"><csobj w="102" h="42" t="Button" ht="../images/home2.gif"><a href="../index.html" onmouseover="return CSIShow(/*CMP*/'Button7',1)" onmouseout="return CSIShow(/*CMP*/'Button7',0)" onclick="return CSButtonReturn()"><img src="../images/home.gif" width="102" height="42" name="Button7" border="0"></a></csobj></td>
+					<td width="400" height="48" colspan="1" rowspan="1" valign="top" align="left" xpos="176" content csheight="48"><font size="1">If you cannot find what you are looking for, please contact our headquarters at the address listed above, or e-mail us.</td>
+					<td width="161" height="48"><spacer type="block" width="161" height="48"></td>
+				</tr>
+			</table>
+			<p>
+		</center>
+		<img src="/cgi-bin/Count.cgi?df=filger.dat" align="right">
+	</body>
+
+</html>

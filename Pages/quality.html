@@ -1,0 +1,284 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Welcome to Filger Mfg.</title>
+		<csscriptdict>
+			<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button7',/*URL*/'../images/servblu1.gif',/*URL*/'../images/servblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button8',/*URL*/'../images/equipblu1.gif',/*URL*/'../images/equipblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button9',/*URL*/'../images/aboutblu1.gif',/*URL*/'../images/aboutblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button10',/*URL*/'../images/contblu1.gif',/*URL*/'../images/contblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button11',/*URL*/'../images/homeblu1.gif',/*URL*/'../images/homeblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button6',/*URL*/'../images/home.gif',/*URL*/'../images/home2.gif',/*URL*/'','');
+
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body background="../images/dust.gif" onload="CSScriptInit();">
+		<div align="left">
+			<table cool width="831" height="179" border="0" cellpadding="0" cellspacing="0" gridx="16" showgridx usegridx gridy="16" showgridy usegridy>
+				<tr height="1" cntrlrow>
+					<td width="1" height="1"></td>
+					<td width="464" height="1"><spacer type="block" width="464" height="1"></td>
+					<td width="112" height="1"><spacer type="block" width="112" height="1"></td>
+					<td width="254" height="1"><spacer type="block" width="254" height="1"></td>
+				</tr>
+				<tr height="16">
+					<td width="1" height="16"><spacer type="block" width="1" height="16"></td>
+					<td width="464" height="178" colspan="1" rowspan="3" valign="top" align="left" xpos="0"><img height="176" width="464" src="../images/dust3.gif"></td>
+					<td width="112" height="16"></td>
+					<td width="254" height="16"></td>
+				</tr>
+				<tr height="64">
+					<td width="1" height="64"><spacer type="block" width="1" height="64"></td>
+					<td width="366" height="64" colspan="2" rowspan="1" valign="top" align="left" xpos="464"><img src="../images/qualban.gif"></td>
+				</tr>
+				<tr height="98">
+					<td width="1" height="98"><spacer type="block" width="1" height="98"></td>
+					<td width="112" height="98"></td>
+					<td width="254" height="98" colspan="1" rowspan="1" valign="top" align="left" xpos="576"><img height="95" width="128" src="../images/flight6.gif"></td>
+				</tr>
+			</table>
+		</div>
+		<center>
+			<p>
+			<table cool width="732" height="60" border="0" cellpadding="0" cellspacing="0" gridx="8" showgridx usegridx gridy="8" showgridy usegridy bgcolor="silver">
+				<tr height="1" cntrlrow>
+					<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+					<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+					<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+					<td width="160" height="1"><spacer type="block" width="160" height="1"></td>
+					<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+					<td width="168" height="1"><spacer type="block" width="168" height="1"></td>
+					<td width="107" height="1"><spacer type="block" width="107" height="1"></td>
+				</tr>
+				<tr height="8">
+					<td width="1" height="8"><spacer type="block" width="1" height="8"></td>
+					<td width="8" height="8"><spacer type="block" width="8" height="8"></td>
+					<td width="144" height="8"><spacer type="block" width="144" height="8"></td>
+					<td width="160" height="8"><spacer type="block" width="160" height="8"></td>
+					<td width="144" height="8"><spacer type="block" width="144" height="8"></td>
+					<td width="168" height="8"><spacer type="block" width="168" height="8"></td>
+					<td width="107" height="8"><spacer type="block" width="107" height="8"></td>
+				</tr>
+				<tr height="51">
+					<td width="1" height="51"><spacer type="block" width="1" height="51"></td>
+					<td width="8" height="51"><spacer type="block" width="8" height="51"></td>
+					<td width="144" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="8"><csobj w="138" h="43" t="Button" ht="../images/servblu2.gif"><a href="products.html" onmouseover="return CSIShow(/*CMP*/'Button7',1)" onmouseout="return CSIShow(/*CMP*/'Button7',0)" onclick="return CSButtonReturn()"><img src="../images/servblu1.gif" width="138" height="43" name="Button7" border="0"></a></csobj></td>
+					<td width="160" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="152"><csobj w="155" h="43" t="Button" ht="../images/equipblu2.gif"><a href="facility.html" onmouseover="return CSIShow(/*CMP*/'Button8',1)" onmouseout="return CSIShow(/*CMP*/'Button8',0)" onclick="return CSButtonReturn()"><img src="../images/equipblu1.gif" width="155" height="43" name="Button8" border="0"></a></csobj></td>
+					<td width="144" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="312"><csobj w="138" h="43" t="Button" ht="../images/aboutblu2.gif"><a href="staff.html" onmouseover="return CSIShow(/*CMP*/'Button9',1)" onmouseout="return CSIShow(/*CMP*/'Button9',0)" onclick="return CSButtonReturn()"><img src="../images/aboutblu1.gif" width="138" height="43" name="Button9" border="0"></a></csobj></td>
+					<td width="168" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="456"><csobj w="159" h="43" t="Button" ht="../images/contblu2.gif"><a href="contact.html" onmouseover="return CSIShow(/*CMP*/'Button10',1)" onmouseout="return CSIShow(/*CMP*/'Button10',0)" onclick="return CSButtonReturn()"><img src="../images/contblu1.gif" width="159" height="43" name="Button10" border="0"></a></csobj></td>
+					<td width="107" height="51" colspan="1" rowspan="1" valign="top" align="left" xpos="624"><csobj w="107" h="43" t="Button" ht="../images/homeblu2.gif"><a href="../index.html" onmouseover="return CSIShow(/*CMP*/'Button11',1)" onmouseout="return CSIShow(/*CMP*/'Button11',0)" onclick="return CSButtonReturn()"><img src="../images/homeblu1.gif" width="107" height="43" name="Button11" border="0"></a></csobj></td>
+				</tr>
+			</table>
+			</p>
+		</center>
+		<p>
+		<hr size="5">
+		</p>
+		<p>
+		<table cool width="941" height="1254" border="0" cellpadding="0" cellspacing="0" gridx="16" showgridx usegridx gridy="16" showgridy usegridy>
+			<tr height="1" cntrlrow>
+				<td width="1" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="240" height="1"><spacer type="block" width="240" height="1"></td>
+				<td width="48" height="1"><spacer type="block" width="48" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="96" height="1"><spacer type="block" width="96" height="1"></td>
+				<td width="80" height="1"><spacer type="block" width="80" height="1"></td>
+				<td width="176" height="1"><spacer type="block" width="176" height="1"></td>
+				<td width="64" height="1"><spacer type="block" width="64" height="1"></td>
+				<td width="204" height="1"><spacer type="block" width="204" height="1"></td>
+			</tr>
+			<tr height="48">
+				<td width="1" height="48"><spacer type="block" width="1" height="48"></td>
+				<td width="416" height="416" colspan="5" rowspan="3" valign="top" align="left" xpos="0"><img height="384" width="384" src="../images/fscope.jpg"></td>
+				<td width="524" height="48" colspan="4" rowspan="1" valign="top" align="left" xpos="416">
+					<hr size="41" width="368">
+				</td>
+			</tr>
+			<tr height="272">
+				<td width="1" height="272"><spacer type="block" width="1" height="272"></td>
+				<td width="80" height="272"></td>
+				<td width="240" height="272" colspan="2" rowspan="1" valign="top" align="left" xpos="496" content csheight="261"><font size="4">AutoCAD - SolidWorks'97, and Mastercam programs are written and fed directly into the CNC machines. </font>
+					<p><font size="4">Real time data is then available for statistical process control (SPC) inspection which is then fed back into the server computer over the same network.</font></td>
+				<td width="204" height="272"></td>
+			</tr>
+			<tr height="96">
+				<td width="1" height="96"><spacer type="block" width="1" height="96"></td>
+				<td width="524" height="96" colspan="4" rowspan="1" valign="top" align="left" xpos="416">
+					<hr size="73" width="368">
+				</td>
+			</tr>
+			<tr height="32">
+				<td width="1" height="32"><spacer type="block" width="1" height="32"></td>
+				<td width="16" height="32"></td>
+				<td width="240" height="528" colspan="1" rowspan="2" valign="top" align="left" xpos="16" content csheight="513"><font size="4">Job quality is always our number one priority! Delivery times are considered critical so every effort is made to assure tight delivery schedules. Quality is never sacrificed. The latest electronic inspection equipment is utilized with continuous measurement (SPC) quality assurance techniques to meet a minimum MIL-STD 45662A calibration standard. Any outside processing subcontracted through Filger is completed only with approved sources which are surveyed regularly by our purchasing and quality assurance staff. Filger is precision and quality on time!</font></td>
+				<td width="48" height="32"></td>
+				<td width="16" height="32"></td>
+				<td width="96" height="32"></td>
+				<td width="80" height="32"></td>
+				<td width="176" height="32"></td>
+				<td width="64" height="32"></td>
+				<td width="204" height="32"></td>
+			</tr>
+			<tr height="496">
+				<td width="1" height="496"><spacer type="block" width="1" height="496"></td>
+				<td width="16" height="496"></td>
+				<td width="48" height="496"></td>
+				<td width="16" height="496"></td>
+				<td width="620" height="544" colspan="5" rowspan="2" valign="top" align="left" xpos="320"><img height="531" width="451" src="../images/ftest.jpg"></td>
+			</tr>
+			<tr height="48">
+				<td width="1" height="48"><spacer type="block" width="1" height="48"></td>
+				<td width="16" height="48"></td>
+				<td width="288" height="309" colspan="2" rowspan="6" valign="top" align="left" xpos="16"><img src="../images/finspct.jpg"></td>
+				<td width="16" height="48"></td>
+			</tr>
+			<tr height="80">
+				<td width="1" height="80"><spacer type="block" width="1" height="80"></td>
+				<td width="16" height="80"></td>
+				<td width="636" height="80" colspan="6" rowspan="1" valign="top" align="left" xpos="304">
+					<hr size="59" width="464">
+				</td>
+			</tr>
+			<tr height="80">
+				<td width="1" height="80"><spacer type="block" width="1" height="80"></td>
+				<td width="16" height="80"></td>
+				<td width="636" height="80" colspan="6" rowspan="1" valign="top" align="left" xpos="304">
+					<hr size="57" width="464">
+				</td>
+			</tr>
+			<tr height="48">
+				<td width="1" height="48"><spacer type="block" width="1" height="48"></td>
+				<td width="16" height="48"></td>
+				<td width="112" height="48" colspan="2" rowspan="1" valign="top" align="left" xpos="304"><csobj w="85" h="45" t="Button" ht="../images/home2.gif"><a href="../index.html" onmouseover="return CSIShow(/*CMP*/'Button6',1)" onmouseout="return CSIShow(/*CMP*/'Button6',0)" onclick="return CSButtonReturn()"><img src="../images/home.gif" width="85" height="45" name="Button6" border="0"></a></csobj></td>
+				<td width="320" height="48" colspan="3" rowspan="1" valign="top" align="left" xpos="416" content bgcolor="silver" csheight="48"></td>
+				<td width="204" height="48"></td>
+			</tr>
+			<tr height="16">
+				<td width="1" height="16"><spacer type="block" width="1" height="16"></td>
+				<td width="16" height="16"></td>
+				<td width="16" height="16"></td>
+				<td width="96" height="16"></td>
+				<td width="80" height="16"></td>
+				<td width="176" height="16"></td>
+				<td width="64" height="16"></td>
+				<td width="204" height="16"></td>
+			</tr>
+			<tr height="37">
+				<td width="1" height="37"><spacer type="block" width="1" height="37"></td>
+				<td width="16" height="37"></td>
+				<td width="368" height="37" colspan="4" rowspan="1" valign="top" align="left" xpos="304" content csheight="37"><font size="1">Copyright &copy; 1999 Filger Manufacturing. All rights reserved.<br>
+					Please contact Filger with comments or questions about this site.<br>
+					</font></td>
+				<td width="64" height="37"></td>
+				<td width="204" height="37"></td>
+			</tr>
+		</table>
+		</p>
+		<p>
+		<hr size="3">
+	</body>
+
+</html>
